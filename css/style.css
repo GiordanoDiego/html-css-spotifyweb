@@ -7,22 +7,106 @@
 
 
 /* -----------------GENERAL RULE----------------- */
-.big-container{
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.flex-container{
     display: flex;
+}
+
+img{
+    width: 100%;
 }
 
 /* -----------------NAV BAR----------------- */
 .nav-container{
     background-color: black;
-    color: lightgrey;
-    width: 200px;
+    color: grey;
+    width: 250px;
     padding: 20px;
+    position: relative;
+}
+
+
+.logo-container,
+.menu-container{
+    margin-bottom: 20px;
+}
+
+.menu-container > *{
+    margin-bottom: 8px;
+}
+
+.menu-container > *:first-child{
+    color: white;
+}
+
+.logo-container img{
+    width: 150px;
+}
+.icon-container{
+    display: flex;
+    align-items: center;
+}
+
+.icon-container img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.playlist-container > *{
+    margin-bottom: 15px;
+}
+
+.playlist-container h4{
+    color: white;
+    margin-bottom: 15px;
+}
+
+
+.download-container{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.download-container img{
+    width: 20px;
+    margin-right: 8px;
+}
+
+.profile-container{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.profile-container img{
+    width: 20px;
+    background-color: rgba(209, 209, 209, 0.5);
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.profile-container h5{
+    color: white;
+    padding-left: 8px;
+}
+
+.nav-container-short{
+    display: none;
+}
+
+.bottom-container{
+    position: absolute;
+    bottom: 5px;
 }
 
 /* -----------------MAIN RULE------------------- */
 .main-container{
     background-color: #141922;
-    width: calc(100% - 200px);
+    width: calc(100% - 250px);
     color: white;
     height: calc(100vh - 80px);
     overflow: auto;
@@ -33,12 +117,14 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: calc(100vw - 200px);
+    width: calc(100vw - 250px);
     justify-content: end;
     background-color: rgba(0, 0, 0, 0.4);
     padding: 30px 20px;
     color: white;
 }
+
+
 
 /*---------------song main---------------*/
 .song-container{
@@ -63,11 +149,36 @@
 @media screen and (max-width: 1100px) {
 
 }
-@media screen and (max-width: 878px) {
+@media screen and (max-width: 700px) {
 
 }
-@media screen and (max-width: 639px) {
+@media screen and (max-width: 600px) {
+    .nav-container-extended{
+        display: none;
+    }
+    .nav-container-short{
+        display: block;
+    }
 
+    .nav-container{
+        width: 50px;
+        padding: 10px;
+    }
+
+    .main-container, .header-container{
+        width: calc(100vw - 50px);
+    }
+    .nav-container-short img{
+        width: 30px;
+    }
+
+    .nav-container-short .download-container img{
+        width: 20px;
+        justify-content: center;
+    }
+    .nav-container-short .download-container{
+        justify-content: center;
+    }
 }
 
 /* -----------------DEBUG----------------- */
