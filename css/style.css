@@ -140,6 +140,10 @@ a{
     margin-top: 80px;
     padding: 20px;
 }
+
+.make-for-you-container{
+    padding: 20px;
+}
 /*-----------header container-----------*/
 .header-container{
     margin-bottom: 40px;
@@ -188,7 +192,11 @@ ul li a{
     font-size: 0.8em;
 }
 
-
+/*-----------MAKE FOR YOU-----------*/
+.make-for-you-container h5{
+    color: gray;
+    margin-top: 7px;
+}
 
 /* -----------------------------------------FOOTER RULE----------------------------------------- */
 .footer-container{
