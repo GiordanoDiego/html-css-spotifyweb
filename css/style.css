@@ -207,10 +207,23 @@ ul li a{
     background-color: #282828;
     color:white;
     height: 80px;
-    padding: 0 20px;
+    padding: 0 10px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
+    justify-content: space-between;
+}
+
+.left-footer-container{
+    width: 20%;
+    margin-right: 10px;
+}
+.right-footer-container{
+    width: 20%;
+    margin-left: 10px;
+}
+
+.center-footer-container{
+    width: 40%;
 }
 
 .left-footer-container{
@@ -219,11 +232,11 @@ ul li a{
 
 }
 .left-footer-container > *:not(:last-child){
-    margin-right: 10px;
+    margin-right: 5px;
 }
 
 .left-footer-container > *:last-child{
-    margin-left: 40px;
+    margin-left: 20px;
 }
 
 .left-footer-container img{
@@ -241,21 +254,57 @@ ul li a{
 
 .center-footer-container > *{
     margin-top: 5px;
-    border: 1px dashed green;
 }
 
 .player-container{
     display: flex;
+    align-items: center;
+    justify-content: center;
 }
-.player-container > *{
-    margin-right: 15px;
+.player-container > *:not(:last-child){
+    margin-right: 10px;
 }
+
+.player-container{
+    font-size: 0.8em;
+}
+
+.button-player-container{
+    text-align: center;
+}
+
+.bar-player-empty{
+    height: 4px;
+    width: 90%;
+    border-radius: 4px;
+    background-color: grey;
+}
+
+.bar-player-full{
+    height: 4px;
+    width: 30%;
+    border-radius: 4px;
+    background-color: white;
+}
+
 
 .right-footer-container{
     display: flex;
+    justify-content: end;
+    align-content: center;
 }
 
+.right-footer-container .my-col-40{
+    width: 50%;
+    display: flex;
+    justify-content: end;
+}
 
+.right-footer-container .my-col-60{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
 
 
 /* -----------------------------------MEDIA QUERY---------------------------------------- */
@@ -298,12 +347,16 @@ ul li a{
     .nav-container-short .download-container{
         justify-content: center;
     }
+
+    .left-footer-container img{
+        width: 35px;
+    }
 }
 
 /* -----------------DEBUG----------------- */
-.debug .upgrade-container,
+/* .debug .upgrade-container,
 .debug .main-container,
 .debug .footer-container,
 .debug .nav-container {
     border: 1px dashed red;
-}
+} */
