@@ -213,6 +213,35 @@ ul li a{
     align-items: center;
 }
 
+.left-footer-container{
+    display: flex;
+    align-items: center;
+
+}
+.left-footer-container > *:not(:last-child){
+    border: 1px dashed red;
+    margin-right: 10px;
+}
+
+.left-footer-container > *:last-child{
+    border: 1px dashed green;
+    margin-left: 40px;
+}
+
+.left-footer-container img{
+    width: 50px;
+}
+
+.footer-container h6,
+.footer-container i{
+    color: gray;
+}
+
+.footer-container i:first-of-type{
+    margin-right: 10px;
+}
+
+
 /* -----------------------------------MEDIA QUERY---------------------------------------- */
 
 /* IN DEKSTOP FIRST */
