@@ -103,6 +103,10 @@ img{
     bottom: 5px;
 }
 
+a{
+    text-decoration: none;
+    color: white;
+}
 /* -----------------MAIN RULE------------------- */
 .main-container{
     background-color: #141922;
@@ -115,6 +119,7 @@ img{
 /*---------------header main---------------*/
 .header-container{
     position: fixed;
+    display: flex;
     top: 0;
     right: 0;
     width: calc(100vw - 250px);
@@ -122,6 +127,12 @@ img{
     background-color: rgba(0, 0, 0, 0.4);
     padding: 30px 20px;
     color: white;
+}
+
+.header-container a{
+    border: 1px solid white;
+    padding: 4px 20px;
+    border-radius: 28px;
 }
 
 
