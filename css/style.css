@@ -7,13 +7,55 @@
 
 
 /* -----------------GENERAL RULE----------------- */
+.big-container{
+    display: flex;
+}
 
-/* -----------------HEADER RULE----------------- */
+/* -----------------NAV BAR----------------- */
+.nav-container{
+    background-color: black;
+    color: lightgrey;
+    width: 200px;
+    padding: 20px;
+}
 
 /* -----------------MAIN RULE------------------- */
+.main-container{
+    background-color: #141922;
+    width: calc(100% - 200px);
+    color: white;
+    height: calc(100vh - 80px);
+    overflow: auto;
+}
+
+/*---------------header main---------------*/
+.header-container{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: calc(100vw - 200px);
+    justify-content: end;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px 20px;
+    color: white;
+}
+
+/*---------------song main---------------*/
+.song-container{
+    margin-top: 80px;
+    padding: 20px;
+}
 
 /* -----------------FOOTER RULE----------------- */
-
+.footer-container{
+    background-color: #282828;
+    color:white;
+    height: 80px;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 /* -----------------MEDIA QUERY----------------- */
 
@@ -29,7 +71,9 @@
 }
 
 /* -----------------DEBUG----------------- */
-.debug .container {
-    background-color: beige;
+.debug .header-container,
+.debug .main-container,
+.debug .footer-container,
+.debug .nav-container {
     border: 1px dashed red;
 }
