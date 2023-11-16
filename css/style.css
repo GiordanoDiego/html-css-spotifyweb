@@ -19,7 +19,7 @@ img{
     width: 100%;
 }
 
-/* -----------------NAV BAR----------------- */
+/* -----------------------------------NAV BAR----------------------------------------- */
 .nav-container{
     background-color: black;
     color: grey;
@@ -64,7 +64,6 @@ img{
     margin-bottom: 15px;
 }
 
-
 .download-container{
     display: flex;
     align-items: center;
@@ -107,7 +106,7 @@ a{
     text-decoration: none;
     color: white;
 }
-/* -----------------MAIN RULE------------------- */
+/* -----------------------------------------MAIN RULE------------------------------------------ */
 .main-container{
     background-color: #141922;
     width: calc(100% - 250px);
@@ -116,8 +115,8 @@ a{
     overflow: auto;
 }
 
-/*---------------header main---------------*/
-.header-container{
+/*---------------upgrade container---------------*/
+.upgrade-container{
     position: fixed;
     display: flex;
     top: 0;
@@ -129,12 +128,11 @@ a{
     color: white;
 }
 
-.header-container a{
+.upgrade-container a{
     border: 1px solid white;
     padding: 4px 20px;
     border-radius: 28px;
 }
-
 
 
 /*---------------song main---------------*/
@@ -142,8 +140,57 @@ a{
     margin-top: 80px;
     padding: 20px;
 }
+/*-----------header container-----------*/
+.header-container{
+    margin-bottom: 40px;
+}
+ul{
+    text-align: center;
+    line-height: 40px;
+}
 
-/* -----------------FOOTER RULE----------------- */
+ul li{
+    list-style: none;
+    display: inline-block;
+    padding-right: 12px;
+}
+
+ul li a{
+    color: gray;
+}
+
+/*-----------RECENTLY SONG-----------*/
+.cards-container{
+    margin-left: -7px;
+    margin-right: -7px;
+}
+
+.cards-container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.cards-container > *{
+    width: calc((100% / 6) - 14px);
+    margin-right: 7px;
+    margin-left: 7px;
+    margin-top: 20px;
+    border: 1px dashed red;
+}
+
+.title-song{
+    margin-top: 7px;
+    text-align: center;
+}
+
+.subtitle{
+    margin-top: 7px;
+    color: grey;
+    font-size: 0.8em;
+}
+
+
+
+/* -----------------------------------------FOOTER RULE----------------------------------------- */
 .footer-container{
     background-color: #282828;
     color:white;
@@ -154,14 +201,18 @@ a{
     align-items: center;
 }
 
-/* -----------------MEDIA QUERY----------------- */
+/* -----------------------------------MEDIA QUERY---------------------------------------- */
 
 /* IN DEKSTOP FIRST */
 @media screen and (max-width: 1100px) {
-
+    .cards-container > *{
+        width: calc((100% / 4) - 14px);
+    }
 }
-@media screen and (max-width: 700px) {
-
+@media screen and (max-width: 836px) {
+    .cards-container > *{
+        width: calc((100% / 2) - 14px);
+    }
 }
 @media screen and (max-width: 600px) {
     .nav-container-extended{
@@ -176,7 +227,7 @@ a{
         padding: 10px;
     }
 
-    .main-container, .header-container{
+    .main-container, .upgrade-container{
         width: calc(100vw - 50px);
     }
     .nav-container-short img{
@@ -193,7 +244,7 @@ a{
 }
 
 /* -----------------DEBUG----------------- */
-.debug .header-container,
+.debug .upgrade-container,
 .debug .main-container,
 .debug .footer-container,
 .debug .nav-container {
