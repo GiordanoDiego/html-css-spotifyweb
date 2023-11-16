@@ -219,12 +219,10 @@ ul li a{
 
 }
 .left-footer-container > *:not(:last-child){
-    border: 1px dashed red;
     margin-right: 10px;
 }
 
 .left-footer-container > *:last-child{
-    border: 1px dashed green;
     margin-left: 40px;
 }
 
@@ -233,13 +231,31 @@ ul li a{
 }
 
 .footer-container h6,
-.footer-container i{
+.footer-container .left-footer-container i{
     color: gray;
 }
 
-.footer-container i:first-of-type{
+.footer-container i{
     margin-right: 10px;
 }
+
+.center-footer-container > *{
+    margin-top: 5px;
+    border: 1px dashed green;
+}
+
+.player-container{
+    display: flex;
+}
+.player-container > *{
+    margin-right: 15px;
+}
+
+.right-footer-container{
+    display: flex;
+}
+
+
 
 
 /* -----------------------------------MEDIA QUERY---------------------------------------- */
