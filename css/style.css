@@ -178,7 +178,6 @@ ul li a{
     margin-right: 7px;
     margin-left: 7px;
     margin-top: 20px;
-    border: 1px dashed red;
 }
 
 .title-song{
@@ -198,6 +197,11 @@ ul li a{
     margin-top: 7px;
 }
 
+/*-----------ARTIST POPULAR-----------*/
+.circular{
+    border-radius: 50%;
+    object-fit: cover;
+}
 /* -----------------------------------------FOOTER RULE----------------------------------------- */
 .footer-container{
     background-color: #282828;
