@@ -62,6 +62,25 @@ img{
     margin-bottom: 15px;
 }
 
+.name-playlist-container > *{
+    margin-bottom: 15px;
+}
+
+/* .name-playlist-container{
+    width: 100%;
+    overflow: auto;
+} */
+
+.nav-container-extended > .playlist-container .name-playlist-container{
+    height: calc(100vh / 4);
+    overflow: auto;
+}
+
+
+.name-playlist-container::-webkit-scrollbar {
+    display: none;
+}
+
 .playlist-container h4{
     color: white;
     margin-bottom: 15px;
