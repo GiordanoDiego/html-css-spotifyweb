@@ -183,6 +183,10 @@ ul li a{
     margin-top: 20px;
 }
 
+.cards-container .title-song{
+    font-weight: bolder;
+}
+
 .title-song{
     margin-top: 7px;
     text-align: center;
@@ -288,6 +292,16 @@ ul li a{
     width: 30%;
     border-radius: 4px;
     background-color: white;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+.dot-player {
+    display: none;
+}
+
+.dot-player i{
+    margin: 0;
 }
 
 
@@ -382,6 +396,10 @@ ul li a{
 .bar-player-empty:hover .bar-player-full{
     background-color: greenyellow;
 }
+.bar-player-empty:hover .dot-player {
+    display: block;
+}
+
 
 /* -----------------------------------MEDIA QUERY---------------------------------------- */
 
