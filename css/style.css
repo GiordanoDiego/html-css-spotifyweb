@@ -1,3 +1,6 @@
+
+@import url(./hover-effect.css);
+
 /* -----------------RESET RULE----------------- */
 *{
     margin: 0;
@@ -324,83 +327,6 @@ ul li a{
 }
 
 
-/*HOVER EFFECT*/
-.main-container .upgrade-container div:hover{
-    transform: scale(1.3);
-    margin-right: 20px;
-}
-
-.menu-container > .icon-container:hover div,
-.playlist-container > div:hover,
-.bottom-container > div:hover,
-.song-container ul li:hover a
-{
-    color: white;
-}
-
-
-
-.song-img{
-    position: relative;
-}
-
-.play-hover{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: none;
-    z-index: 1;
-    font-size: 1.5em;
-}
-
-.play-hover-background{
-    position: absolute;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-}
-
-.most-popular-singer .play-hover-background{
-    position: absolute;
-    display: none;
-    background-color: rgba(0, 0, 0, 0.4);
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    border-radius: 50%;
-}
-
-.cards-container .card:hover .play-hover,
-.cards-container .card:hover .play-hover-background{
-    display: block;
-}
-
-.left-footer-container h6:hover{
-    color: white;
-    text-decoration: underline;
-}
-
-.left-footer-container i:hover{
-    color: white;
-}
-
-.center-footer-container i.fa-circle-play:hover{
-    transform: scale(1.5);
-}
-
-.bar-player-empty:hover .bar-player-full{
-    background-color: greenyellow;
-}
-.bar-player-empty:hover .dot-player {
-    display: block;
-}
-
-
 /* -----------------------------------MEDIA QUERY---------------------------------------- */
 
 /* IN DEKSTOP FIRST */
@@ -446,11 +372,3 @@ ul li a{
         width: 35px;
     }
 }
-
-/* -----------------DEBUG----------------- */
-/* .debug .upgrade-container,
-.debug .main-container,
-.debug .footer-container,
-.debug .nav-container {
-    border: 1px dashed red;
-} */
