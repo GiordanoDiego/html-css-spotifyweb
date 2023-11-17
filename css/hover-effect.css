@@ -5,14 +5,36 @@
 }
 
 .menu-container > .icon-container:hover div,
-.playlist-container > div:hover,
+.name-playlist-container > div:hover,
 .bottom-container > div:hover,
-.song-container ul li:hover a
+.song-container ul li:hover a,
+.add-playlist-container:hover
 {
     color: white;
 }
 
+.menu-container > .icon-container:hover .vertical-line{
+    display: block;
+}
 
+.vertical-line{
+    height: 100%;
+    border: 2px solid greenyellow;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    display: none;
+}
+
+.song-container ul li:hover .orizzontal-line{
+    display: block;
+}
+
+.orizzontal-line{
+    width: 30px;
+    border: 1px solid greenyellow;
+    display: none; 
+}
 
 .song-img{
     position: relative;
@@ -73,3 +95,9 @@
 .bar-player-empty:hover .dot-player {
     display: block;
 }
+
+.position-relative{
+    position: relative;
+}
+
+
