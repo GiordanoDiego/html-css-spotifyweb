@@ -151,6 +151,7 @@ a{
     background-color: rgba(0, 0, 0, 0.4);
     padding: 30px 20px;
     color: white;
+    z-index: 1;
 }
 
 .upgrade-container a{
@@ -368,6 +369,7 @@ ul li a{
     }
     .nav-container-short{
         display: block;
+        display: flex;
     }
 
     .nav-container{
@@ -375,6 +377,9 @@ ul li a{
         padding: 10px;
     }
 
+    .menu-container{
+        flex-grow: 1;
+    }
     .main-container, .upgrade-container{
         width: calc(100vw - 50px);
     }
