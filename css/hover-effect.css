@@ -89,9 +89,6 @@
     transform: scale(1.5);
 }
 
-.bar-player-empty:hover .bar-player-full{
-    background-color: greenyellow;
-}
 .bar-player-empty:hover .dot-player {
     display: block;
 }
@@ -99,5 +96,22 @@
 .position-relative{
     position: relative;
 }
+
+.center-footer-container .bar-player-empty:hover .bar-player-full{
+   animation: timing-song 40s linear;
+}
+
+@keyframes timing-song{
+    0%{
+        background-color: greenyellow;
+        width: 30%;
+    }
+    100%{
+        background-color: greenyellow;
+        width: 100%;
+    }
+
+}
+
 
 
