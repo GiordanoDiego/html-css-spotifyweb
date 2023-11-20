@@ -28,13 +28,26 @@ img{
     color: grey;
     width: 250px;
     padding: 20px;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: calc(100vh - 80px);
 }
 
+.playlist-container{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.name-playlist-container{
+    flex-grow: 1;
+    overflow: auto;
+}
 
 .logo-container,
 .menu-container{
-    margin-bottom: 20px;
+    padding-bottom: 20px;
 }
 
 .menu-container > *{
@@ -61,16 +74,11 @@ img{
 }
 
 .name-playlist-container > *{
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-/* .name-playlist-container{
-    width: 100%;
-    overflow: auto;
-} */
 
-.nav-container-extended > .playlist-container .name-playlist-container{
-    height: calc(100vh / 4);
+.nav-container-extended > .playlist-container{
     overflow: auto;
 }
 
@@ -117,10 +125,7 @@ img{
     display: none;
 }
 
-.bottom-container{
-    position: absolute;
-    bottom: 5px;
-}
+
 
 a{
     text-decoration: none;
